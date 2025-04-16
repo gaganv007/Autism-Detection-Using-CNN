@@ -73,16 +73,3 @@ pip install tensorflow numpy
    python main.py
    ```
    During training, the model will output progress with epoch-wise accuracy and loss metrics. The best model is saved as `best_autism_detection_model.h5`, and the final model is saved as `final_autism_detection_model.h5`.
-
-## Model Evaluation
-
-After training, use a separate test dataset or your validation set to evaluate model performance to ensure that the model generalizes well on unseen data.
-
-## Further Improvements
-
-- **Transfer Learning:**  
-  If accuracy improvements are not sufficient, consider using a pre-trained model like VGG16 or EfficientNet. Fine-tuning a pre-trained network can be very effective, especially if your dataset is limited.
-- **Hyperparameter Tuning:**  
-  Experiment with learning rates, dropout probabilities, batch sizes, and even network depth using techniques like grid search or Keras Tuner.
-- **Advanced Augmentation:**  
-  Implement further augmentation techniques to simulate additional real-world variations.
